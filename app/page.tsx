@@ -33,7 +33,7 @@ export default function ControlPanel() {
     // Check if number is valid (1-75 for standard bingo)
     const num = Number.parseInt(number)
     if (isNaN(num) || num < 1 || num > 75) {
-      alert("Por favor, digite um número válido entre 1 e 75.")
+      alert("Por favor, digite um número válido entre 1 e 100.")
       return
     }
 
@@ -96,7 +96,7 @@ export default function ControlPanel() {
               onChange={(e) => setNumber(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleAddNumber()}
               min="1"
-              max="75"
+              max="100"
               className="text-xl"
             />
             <Button onClick={handleAddNumber}>Adicionar</Button>

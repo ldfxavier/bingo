@@ -63,7 +63,7 @@ export default function DisplayScreen() {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-5 gap-4 md:grid-cols-10">
-            {Array.from({ length: 75 }, (_, i) => (i + 1).toString()).map((num) => {
+            {Array.from({ length: 100 }, (_, i) => (i + 1).toString()).map((num) => {
               const isDrawn = drawnNumbers.includes(num)
               return (
                 <Badge
